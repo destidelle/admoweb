@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JDD Trucking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <style>
+  .card {
+          margin: 0 auto;
+          float: none;
+          margin-bottom: 10px;
+
+  }
+
+  *, *:before, *:after {margin: 0; padding: 0; box-sizing: border-box;}
+  body {background: #######; color: black;}
+
+  h1 {padding: 100px 0; text-align: center;}
+  p {margin: 0 0 20px; line-height: 1.5;}
+
+  .main {margin: 0 auto; min-width: 320px; max-width: 1800px;}
+  .content {background: #fff; color: #373737;}
+  .content > div {display: none; padding: 20px 25px 5px;}
+
+  input {display: none;}
+  label {display: inline-block; padding: 15px 25px; font-weight: 600; text-align: center;}
+  label:hover {color: #fff; cursor: pointer;}
+  input:checked + label {background: #ed5a6a; color: #fff;}
+
+  #tab1:checked ~ .content #content1,
+  #tab2:checked ~ .content #content2,
+  #tab3:checked ~ .content #content3,
+  #tab4:checked ~ .content #content4 {
+    display: block;
+  }
+
+  </style>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li ><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown">Welcome Driver
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Account </span></a></li>
+                <li><a href="#"><button type="button" class="btn btn-link" style="color: #708090;">Messages <span class="badge"> 2 </span></button></a></li>
+                <li><a href="#"><button type="button" class="btn btn-link" style="color: #708090;">Notifications <span class="badge"> 0 </span></button></a></li>
+                <li><a href="#"><button type="button" class="btn btn-link" style="color: red;">Consortium <span class="badge"> 1 </span></button></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-inbox"></span> Doc-Upload</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-usd"></span> Driver Pay</a></li>
+              </ul>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  </header>
+<div class="jumbotron">
+  <div class="text-center">
+    <h1>Equipment</h1>
+    </div>
+  </div>
+    <div class="container-fluid">
+      <h2 class="text-center">Click on the tab below to see our equipment:</h2>
+      </br>
+      <div class="row">
+        <div class="text-center">
+        <div class="col-sm-12">
+
+          <div class="main">
+
+          		  <input id="tab1" type="radio" name="tabs" checked>
+          		  <label for="tab1">Trucks</label>
+
+          		  <input id="tab2" type="radio" name="tabs">
+          		  <label for="tab2">Trailers</label>
+
+
+          		  <div class="content">
+          			  <div id="content1">
+                    <div class="row">
+  <div class="col-sm-4"><img class="img-thumbnail" src="truck2.jpg" alt="Card image" style="height: 300px; width:500px; border-radius:20px;"></div>
+  <div class="col-sm-4"><img class="img-thumbnail" src="truck3.jpg" alt="Card image" style="height: 300px; width:500px; border-radius:20px;"></div>
+  <div class="col-sm-4"><img class="img-thumbnail" src="truck4.jpg" alt="Card image" style="height: 300px; width:500px; border-radius:20px;"></div>
+</div>
+
+          			  </div>
+
+          			  <div id="content2">
+                    <div class="col-sm-4"><img class="img-thumbnail" src="reefer2.jpg" alt="Card image" style="height: 300px; width:500px; border-radius:20px;"></div>
+                    <div class="col-sm-4"><img class="img-thumbnail" src="reefer3.jpg" alt="Card image" style="height: 300px; width:500px; border-radius:20px;"></div>
+                    <div class="col-sm-4"><img class="img-thumbnail" src="reefer4.jpg" alt="Card image" style="height: 300px; width:500px; border-radius:20px;"></div>
+          			  </div>
+
+
+          		  </div>
+
+          </div>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
