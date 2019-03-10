@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JDD Trucking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/external.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li ><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown">Welcome Driver
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Account </span></a></li>
+                <li><a href="#"><button type="button" class="btn btn-link" style="color: #708090;">Messages <span class="badge"> 2 </span></button></a></li>
+                <li><a href="#"><button type="button" class="btn btn-link" style="color: #708090;">Notifications <span class="badge"> 0 </span></button></a></li>
+                <li><a href="#"><button type="button" class="btn btn-link" style="color: red;">Consortium <span class="badge"> 1 </span></button></a></li>
+                <li><a href="docupload.html"><span class="glyphicon glyphicon-inbox"></span> Doc-Upload</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-usd"></span> Driver Pay</a></li>
+              </ul>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  </header>
+<div class="jumbotron">
+  <div class="text-center">
+    <h1>Doc-Upload Center</h1>
+    </div>
+  </div>
+    <div class="container">
+      <h2 class="text-center">Please use the following form to upload your documents: </h2>
+      </br>
+      <div class="row">
+        <div class="text-center">
+<div class="col-sm-6 col-sm-offset-3">
+            <div class="panel panel-info" style="max-width: 100%;">
+                  <div class="panel-heading">Upload Form</div>
+                  <div class="panel-body">
+
+
+                      <form>
+                      <h3> Choose a driver name:</h3>
+                      <div class="form-group">
+                        <select class="form-control" id="select1">
+                          <option> Select an Option...</option>
+                          <option>Jamison</option>
+                          <option>Drew</option>
+                          <option>Jerry</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Driver Email Address" required>
+                      </div>
+
+
+<h3> Choose a file:</h3>
+<div class="form-group">
+  <input type="title" class="form-control" id="title" placeholder="Title of Document" required>
+</div>
+</br>
+  <input class="center" type="file" id="myFile" name="filename2" style="background-color: lightgray;" required>
+</br>
+<div class="form-group">
+<label for="comment">Comments:</label>
+<textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+
+<h3> Choose option(s): </h3>
+<label class="checkbox-inline">
+      <input type="checkbox" value="">BOL
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">POD
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Scale Ticket
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Toll Receipt
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Lumper Fee
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">DOT Inspection
+    </label>
+
+
+  <h3>Level of Importance:</h3>
+  <label class="radio-inline">
+      <input type="radio" name="optradio" checked>High
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Medium
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Low
+    </label>
+</br>
+</br>
+    <input class="btn btn-primary" type="submit" value="Submit">
+<input class="btn btn-primary" type="reset" value="Reset">
+</form>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</body>
+</html>
