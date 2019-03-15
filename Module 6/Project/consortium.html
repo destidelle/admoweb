@@ -7,14 +7,6 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
-  <style>
-  .card {
-          margin: 0 auto;
-          float: none;
-          margin-bottom: 10px;
-
-  }
-  </style>
 </head>
 <body>
     <header>
@@ -29,8 +21,8 @@
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="home.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
+              <li><a href="home.html">Home</a></li>
+              <li class="active"><a href="about.html">About</a></li>
               <li><a href="contactus.html">Contact Us</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -52,42 +44,53 @@
       </nav>
 
   </header>
-<div class="jumbotron">
+  <div class="jumbotron">
+
   <div class="text-center">
-    <h1>JDD Trucking</h1>
-    <img src="route.png" class="img-responsive center-block" alt="route map">
+    <h1>Consortium Information</h1>
     </div>
   </div>
-    <div class="container-fluid">
-      <h2 class="text-center">Equipment</h2>
-      </br>
-      <div class="row">
-        <div class="text-center">
-        <div class="col-sm-6">
-          <div class="card" >
-          </br>
-            <img class="img-thumbnail" src="truck1.jpg" alt="Card image" style="height: 300px; width:500px; border-radius:20px;">
-            <div class="card-body">
-              <h4 class="card-title" style="text-align:center;">Trucks</h4>
-              <p class="card-text" style="text-align:center;">Lorem ipsum euismod curabitur cubilia non eros cursus mi est per netus fringilla torquent libero, hendrerit tempus netus est vitae convallis nisl diam quis vivamus neque malesuada diam cubilia malesuada odio phasellus id.</p>
-              <a href="equipment.html" class="btn btn-primary center-block">See Our Trucks</a>
+    <div class="container">
 
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card" >
-          </br>
-            <img class="img-thumbnail" src="reefer1.jpg" alt="Card image" style="height: 300px; width:500px; border-radius:20px;">
-            <div class="card-body">
-              <h4 class="card-title" style="text-align:center;">Trailers</h4>
-              <p class="card-text" style="text-align:center;">Lorem ipsum euismod curabitur cubilia non eros cursus mi est per netus fringilla torquent libero, hendrerit tempus netus est vitae convallis nisl diam quis vivamus neque malesuada diam cubilia malesuada odio phasellus id.</p>
-              <a href="equipment.html" class="btn btn-primary center-block">See Our Trailers</a>
 
-            </div>
-          </div>
-          </div>
-</div>
+<img src="consortium.png" alt="truck" class="img-responsive center-block" style="height: 200px; width: 1000px">
+
+
+<link href="toastr.css" rel="stylesheet"/>
+
+<script src="toastr.js"></script>
+      <script>
+
+      //begin notificaiton request permissions
+          Notification.requestPermission((permission) => {
+            process(permission)
+          }).then((permission) => {
+
+          })
+          const process = (permission) => {
+          if (permission === "granted") {
+          }
+
+          //notification popup
+          Command: toastr["error"]("You are scheduled for a DRUG test on March 30, 2019. Please contact safety for more information. (click anywhere to close)", "Consortium Alert")
+
+          toastr.options = {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "timeOut": "10000000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+          }
+        }
+      </script>
+
 </div>
 </body>
 </html>
